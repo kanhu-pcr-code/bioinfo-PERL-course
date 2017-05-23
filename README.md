@@ -38,7 +38,7 @@ June 12-13, 2017.
 
 >- http://web.stanford.edu/class/gene211/handouts/How_Perl_HGP.html
 >- http://www.perlmonks.org/?node_id=823275
-
+>- Perl camel: http://archive.oreilly.com/pub/a/oreilly/perl/usage/
 
 
 ## Download URLs

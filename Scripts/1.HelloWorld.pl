@@ -1,1 +1,5 @@
-print 'Say';print 'hello\n';print "to";print "PERL\n";print "now\n";
+# Script-1
+# Hello world Perl.
+
+print "Hello world!!!\n";
+
