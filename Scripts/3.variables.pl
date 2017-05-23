@@ -1,7 +1,9 @@
 
 # Script-3
 # Variables of various datatypes
+## variable interpolation
 
+=i
 ## Scalars with integer values
 $a = 10;
 $b = -10;
@@ -31,7 +33,19 @@ $enzyme = 'EcoRI';
 $dna = 'attgcagttggttcagtggacgattgacccagttgaccagttgaccagta';
 $id = 'gi|HS1182921.1';
 print "\$enzyme = $enzyme \n\$dna = $dna\n \$id = $id\n";
+=cut
+### Interpolation 
 
+print "\n\n\n\n\n\n";
+$university = 'UENF';
+### Double quotes
+#print "Double quotes: Name of our university is $university\n";
+$string = "Double quotes: Name of our university is $university\n";
+print $string;
+
+
+### Single quotes
+#print 'Single quotes: Name of our university is $university\n';
 
 
 
