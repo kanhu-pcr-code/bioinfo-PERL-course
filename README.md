@@ -6,17 +6,8 @@ June 12-13, 2017.
 ## Files added
 
 >- Course-schedule.docx
-
-
-
-
-
-
-
-
-
-
-
+>- PPTs: MS PowerPoint Slides (.pptx)
+>- Scripts: Perl scripts for each slide.
 
 
 
