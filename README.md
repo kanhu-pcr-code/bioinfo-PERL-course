@@ -35,6 +35,8 @@ June 12-13, 2017.
 >- http://www.kodegod.com/learn-programming/101-programs-to-build-your-programming-logic-using-c-programming/
 >- https://www.youtube.com/watch?v=UScm9avQM1Y
 >- On ubuntu: perl -e 'foreach(1..15){$u = sprintf "http://cbsu.tc.cornell.edu/lab/doc/PerlBio_%02d.pdf\n",$_; system("wget $u") }'
+>- Perl functions: https://perldoc.perl.org/index-functions.html
+
 
 >- http://web.stanford.edu/class/gene211/handouts/How_Perl_HGP.html
 >- http://www.perlmonks.org/?node_id=823275
