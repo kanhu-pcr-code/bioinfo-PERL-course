@@ -153,8 +153,14 @@ delete $planets{Mercury}; # equals to undef $planets{Mercury}.
 
 
 ##undef()
+$foo = undef; # CORRECT
+@ary = undef; # INCORRECT
+%hash = undef; #INCORRECT 
 
     undef $foo;
     undef $bar{'blurfl'};      # Compare to: delete $bar{'blurfl'};
     undef @ary;
     undef %hash;
+
+
+	
