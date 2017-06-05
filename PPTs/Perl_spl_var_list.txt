@@ -1,0 +1,95 @@
+## Special Vars Quick Reference
+--------------------------------
+
+$_	The default or implicit variable.
+@_	Subroutine parameters.
+$a
+$b	sort comparison routine variables.
+@ARGV	The command-line args.
+Regular Expressions
+$<digit>	Regexp parenthetical capture holders.
+$&	Last successful match (degrades performance).
+${^MATCH}	Similar to $& without performance penalty. Requires /p modifier.
+$`	Prematch for last successful match string (degrades performance).
+${^PREMATCH}	Similar to $` without performance penalty. Requires /p modifier.
+$'	Postmatch for last successful match string (degrades performance).
+${^POSTMATCH}	Similar to $' without performance penalty. Requires /p modifier.
+$+	Last paren match.
+$^N	Last closed paren match (last submatch).
+@+	Offsets of ends of successful submatches in scope.
+@-	Offsets of starts of successful submatches in scope.
+%+	Like @+, but for named submatches.
+%-	Like @-, but for named submatches.
+$^R	Last regexp (?{code}) result.
+${^RE_DEBUG_FLAGS}	Current value of regexp debugging flags. See use re 'debug';
+${^RE_TRIE_MAXBUF}	Control memory allocations for RE optimizations for large alternations.
+Encoding
+${^ENCODING}	The object reference to the Encode object, used to convert the source code to Unicode.
+${^OPEN}	Internal use: \0 separated Input / Output layer information.
+${^UNICODE}	Read-only Unicode settings.
+${^UTF8CACHE}	State of the internal UTF-8 offset caching code.
+${^UTF8LOCALE}	Indicates whether UTF8 locale was detected at startup.
+IO and Separators
+$.	Current line number (or record number) of most recent filehandle.
+$/	Input record separator.
+$|	Output autoflush. 1=autoflush, 0=default. Applies to currently selected handle.
+$,	Output field separator (lists)
+$\	Output record separator.
+$"	Output list separator. (interpolated lists)
+$;	Subscript separator. (Use a real multidimensional array instead.)
+Formats
+$%	Page number for currently selected output channel.
+$=	Current page length.
+$-	Number of lines left on page.
+$~	Format name.
+$^	Name of top-of-page format.
+$:	Format line break characters
+$^L	Form feed (default "\f").
+$^A	Format Accumulator
+Status Reporting
+$?	Child error. Status code of most recent system call or pipe.
+$!	Operating System Error. (What just went 'bang'?)
+%!	Error number hash
+$^E	Extended Operating System Error (Extra error explanation).
+$@	Eval error.
+${^CHILD_ERROR_NATIVE}	Native status returned by the last pipe close, backtick (`` ) command, successful call to wait() or waitpid(), or from the system() operator.
+ID's and Process Information
+$$	Process ID
+$<	Real user id of process.
+$>	Effective user id of process.
+$(	Real group id of process.
+$)	Effective group id of process.
+$0	Program name.
+$^O	Operating System name.
+Perl Status Info
+$]	Old: Version and patch number of perl interpreter. Deprecated.
+$^C	Current value of flag associated with -c switch.
+$^D	Current value of debugging flags
+$^F	Maximum system file descriptor.
+$^I	Value of the -i (inplace edit) switch.
+$^M	Emergency Memory pool.
+$^P	Internal variable for debugging support.
+$^R	Last regexp (?{code}) result.
+$^S	Exceptions being caught. (eval)
+$^T	Base time of program start.
+$^V	Perl version.
+$^W	Status of -w switch
+${^WARNING_BITS}	Current set of warning checks enabled by use warnings;
+$^X	Perl executable name.
+${^GLOBAL_PHASE}	Current phase of the Perl interpreter.
+$^H	Internal use only: Hook into Lexical Scoping.
+%^H	Internaluse only: Useful to implement scoped pragmas.
+${^TAINT}	Taint mode read-only flag.
+${^WIN32_SLOPPY_STAT}	If true on Windows stat() won't try to open the file.
+Command Line Args
+ARGV	Filehandle iterates over files from command line (see also <>).
+$ARGV	Name of current file when reading <>
+@ARGV	List of command line args.
+ARGVOUT	Output filehandle for -i switch
+Miscellaneous
+@F	Autosplit (-a mode) recipient.
+@INC	List of library paths.
+%INC	Keys are filenames, values are paths to modules included via use, require, or do.
+%ENV	Hash containing current environment variables
+%SIG	Signal handlers.
+$[	Array and substr first element (Deprecated!).
