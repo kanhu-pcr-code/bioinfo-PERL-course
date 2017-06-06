@@ -1,7 +1,5 @@
-
-# Script-3
 # Variables of various datatypes
-## variable interpolation
+# And variable interpolation inside double quotes
 
 
 
@@ -40,10 +38,11 @@ $enzyme = 'EcoRI';
 $dna = 'attgcagttggttcagtggacgattgacccagttgaccagttgaccagta';
 $id = 'gi|HS1182921.1';
 print "\$enzyme = $enzyme \n\$dna = $dna\n \$id = $id\n";
-
-### Interpolation 
-
 print "\n\n\n\n\n\n";
+
+
+
+
 $university = 'UENF';
 
 ### Single quotes
@@ -51,7 +50,6 @@ print 'Single quotes: Name of our university is $university\n';
 
 ### Double quotes
 print "Double quotes: Name of our university is $university\n";
-
 
 $string = "Double quotes: Name of our university is $university\n";
 print "\$string : $string";
@@ -86,7 +84,7 @@ print "\@colors: @colors\n";
 
 
 ###################################
-#    HASHES						###
+#    HASH					###
 ###################################
 print "Hash \n\n\n\n";
 #Crate a hash 

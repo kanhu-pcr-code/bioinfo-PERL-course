@@ -1,15 +1,17 @@
 ## Functions in array
+
 # split() : slipts an string into an array
 
 $string = '010101010101';
-@array = split /0/,$string;
+@array = split //,$string;  # by default split each character
+@array = split /0/,$string; # Split using zeros (0)
 print "array : @array\n\n";
 $string = 'abbxcbbxdffxuuy';
 @array = split /x/,$string;
-print "array : @array\n\n";
+print "array : @array\n\n";	# abb cbb dff uuy
 $string = 'perl array created';
 @array = split / /,$string;
-print "array : @array\n\n";
+print "array : @array\n\n"; # split by space
 
 # join() joins an array into string using a separator
 @array =('Learn', 'Perl', 'with', 'me');
@@ -18,6 +20,7 @@ print "Joined using space(' '): $string\n"; # 'Learn Perl with me'
 $string = join '*',@array;  # * as separator
 print "Joined using asterik(*): $string\n"; # 'Learn*Perl*with*me'
 print "\n\n\n\n\n\n"	;
+
 ## Array manipulating operator
 @array =('a','b','c','d','e');
 print "array: @array\n\n";
@@ -48,8 +51,8 @@ print "\narray shifted: @array\n\n";
 print "array: @array\n";
 unshift @array, 'x';
 print "array unshift: @array\n\n";
-
 print "\n\n\n\n\n\n"	;
+
 # sortin an array
 @files = (1,100,99,90,50,-3,3,66);
 print "files : @files\n\n";
@@ -74,93 +77,4 @@ print "@articles\n";
 	
 	
 print "\n\n\n\n\n\n"	;
-%hash = (
-grape => 'purple',
-banana => 'yellow',
-apple => 'red',
-);
-
-@keys = keys %hash;
-print "keys = @keys\n";
-
-
-
-@values = values %hash;
-print "values = @values\n";
-
-
-($k,$v)=each(%hash);
-print "k=$k\tv=$v\n";
-($k,$v)=each(%hash);
-print "k=$k\tv=$v\n";
-($k,$v)=each(%hash);
-print "k=$k\tv=$v\n";
-
-## Sorting on hash
-
-%planets = (
-   Mercury => 0.4,
-   Venus   => 0.7,
-   Earth   => 1,
-   Mars    => 1.5,
-   Ceres   => 2.77,
-   Saturn  => 9.5,
-   Uranus  => 19.6,
-   Neptune => 30,
-   Jupiter => 5.2,
-    Pluto   => 39,
-   Charon  => 39,
-);
-
-
-
-# default, alphabetical sorting a-z of keys
-@keys = sort keys %planets;
-
-# sorting by values
-@sorted_keys = sort { $planets{$a} <=> $planets{$b} } keys %planets;
-
-
-print "\n\nplanets{Mercury} = ".$planets{Mercury};
-print "\nexists planets{Mercury} = ".exists $planets{Mercury};
-
-print "\n\n\n\n\n\n"	;
-##
-# delete()
-@array =('a','b','c','d','e');
-print "array: @array\n";
-delete $array[3]; 
-print "array length: ".scalar @array;
-print "\nafter delete array[3]: @array\n\n";
-
-@array =('a','b','c','d','e');
-print "array: @array\n";
-delete $array[4]; 
-print "array length: ".scalar @array;
-print "\nafter delete array[3]: @array\n\n";
-
-%planets = (
-   Mercury => 0.4,
-   Venus   => 0.7,
-   Earth   => 1,
-   Mars    => 1.5,
-   Ceres   => 2.77,
-   Jupiter => 5.2,
-    Pluto   => 39,
-   Charon  => 39,
-);
-delete $planets{Mercury}; # equals to undef $planets{Mercury}.
-
-
-##undef()
-$foo = undef; # CORRECT
-@ary = undef; # INCORRECT
-%hash = undef; #INCORRECT 
-
-    undef $foo;
-    undef $bar{'blurfl'};      # Compare to: delete $bar{'blurfl'};
-    undef @ary;
-    undef %hash;
-
-
 	
