@@ -5,7 +5,7 @@ use strict;
 use warnings;
 
 if($ARGV[0] eq '-h' or $#ARGV<0){
- print STDERR "Script to read fasta file\nUsage: perl $0 FASTA\n";
+ print STDERR "Script to read fasta file and extract an ID\nUsage: perl $0 FASTA ID\n";
  exit(1); ## terminate program here 
 }
 

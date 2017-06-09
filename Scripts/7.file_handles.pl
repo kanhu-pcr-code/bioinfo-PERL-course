@@ -18,9 +18,9 @@ print "\n\n\n\n";
 ## read the content of a file and print 
 open FASTA, "< ../data/At_proteins.fasta" 
    or die "Error: $! ../data/At_proteins.fasta";
- while $line(<FASTA>){
+while ($line=<FASTA>){
  print "$line";
- } 
+} 
 close FASTA;
 
 ## Write to a file

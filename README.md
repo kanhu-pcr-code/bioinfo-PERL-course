@@ -43,3 +43,8 @@ June 12-13, 2017.
 ## Tips and tricks
 >- Notepad++: https://www.youtube.com/watch?v=PzjPu5F9K9Y
 >- http://stackoverflow.com/questions/282329/what-are-five-things-you-hate-about-your-favorite-language/1698964#1698964
+
+
+## Guidelines for reproducible research
+>- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4076505/
+>- 
